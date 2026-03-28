@@ -125,4 +125,17 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     fadeInOnScroll();
+
+    const emailLink = document.getElementById('emailLink');
+    if (emailLink) {
+        emailLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = this.getAttribute('href');
+            const confirmMessage = 'Are you sure you want to open the email client?';
+            
+            if (confirm(confirmMessage)) {
+                window.location.href = email;
+            }
+        });
+    }
 });
