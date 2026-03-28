@@ -502,13 +502,13 @@ section {
 
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .why-item {
     background: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -540,18 +540,20 @@ section {
 }
 
 .why-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .why-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
     color: var(--secondary-color);
 }
 
 .why-item p {
     color: var(--text-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
 }
 
 .contact {
