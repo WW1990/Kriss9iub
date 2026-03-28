@@ -115,7 +115,9 @@ textarea:focus-visible {
 
 .hero {
     padding: 160px 0 100px;
-    background: var(--bg-gradient-1);
+    background: linear-gradient(rgba(255, 107, 53, 0.9), rgba(247, 147, 30, 0.9)), url('assets/Gemini_Generated_Image_3tha883tha883tha.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     position: relative;
     overflow: hidden;
@@ -345,6 +347,24 @@ section {
     border: 1px solid #e5e7eb;
     position: relative;
     overflow: hidden;
+}
+
+.service-card:nth-child(1) {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha-2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card:nth-child(2) {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha-3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card:nth-child(3) {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .service-card::before {
