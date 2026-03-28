@@ -118,20 +118,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fadeInOnScroll();
 
-    const phoneLink = document.getElementById('phoneLink');
-    if (phoneLink) {
-        phoneLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            const phone = this.getAttribute('href').replace('tel:', '');
-            const confirmMessage = 'How would you like to contact us?\n\n1. Call directly\n2. WhatsApp';
-            
-            const choice = prompt(confirmMessage, '1');
-            
-            if (choice === '1') {
-                window.location.href = this.getAttribute('href');
-            } else if (choice === '2') {
-                window.location.href = `https://wa.me/${phone}`;
-            }
-        });
-    }
+
 });
