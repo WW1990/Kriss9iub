@@ -115,7 +115,7 @@ textarea:focus-visible {
 
 .hero {
     padding: 160px 0 100px;
-    background: linear-gradient(rgba(255, 107, 53, 0.9), rgba(247, 147, 30, 0.9)), url('assets/Gemini_Generated_Image_3tha883tha883tha.png');
+    background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 118, 110, 0.78)), url('assets/95420867-9e8b-4efa-9709-97850ba8f1d6.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -349,22 +349,10 @@ section {
     overflow: hidden;
 }
 
-.service-card:nth-child(1) {
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha-2.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.service-card:nth-child(2) {
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha-3.png');
-    background-size: cover;
-    background-position: center;
-}
-
+.service-card:nth-child(1),
+.service-card:nth-child(2),
 .service-card:nth-child(3) {
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('assets/Gemini_Generated_Image_3tha883tha883tha.png');
-    background-size: cover;
-    background-position: center;
+    background: white;
 }
 
 .service-card::before {
@@ -437,6 +425,56 @@ section {
 
 .why-us {
     background: var(--bg-light);
+}
+
+.showcase {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.showcase-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    transition: var(--transition);
+}
+
+.showcase-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.showcase-card figcaption {
+    padding: 1.5rem;
+}
+
+.showcase-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.showcase-card p {
+    color: var(--text-light);
+    font-size: 0.98rem;
+}
+
+.showcase-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 30px -18px rgba(15, 23, 42, 0.4), 0 12px 20px -12px rgba(15, 23, 42, 0.2);
+    border-color: rgba(15, 118, 110, 0.35);
 }
 
 .why-grid {
@@ -735,6 +773,10 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
     }
@@ -782,6 +824,10 @@ section {
 
     .services-grid,
     .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-grid {
         grid-template-columns: 1fr;
     }
 

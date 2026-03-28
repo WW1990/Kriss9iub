@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarScroll();
 
     const fadeInOnScroll = () => {
-        const elements = document.querySelectorAll('.service-card, .why-item, .feature-item');
+        const elements = document.querySelectorAll('.service-card, .why-item, .feature-item, .showcase-card');
 
         elements.forEach(el => el.classList.add('reveal'));
 
