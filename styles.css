@@ -115,7 +115,7 @@ textarea:focus-visible {
 
 .hero {
     padding: 160px 0 100px;
-    background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 118, 110, 0.78)), url('assets/95420867-9e8b-4efa-9709-97850ba8f1d6.jpg');
+    background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 118, 110, 0.78)), url('assets/comp212.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -277,6 +277,29 @@ section {
     margin-bottom: 1.5rem;
     font-size: 1.125rem;
     color: var(--text-light);
+}
+
+.about-figure {
+    margin: 1.5rem 0 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid #e2e8f0;
+    background: white;
+}
+
+.about-figure img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.about-figure figcaption {
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    background: #f8fafc;
 }
 
 .about-features {
