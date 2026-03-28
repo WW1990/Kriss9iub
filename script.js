@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu a');
-    const contactForm = document.getElementById('contactForm');
     const statNumbers = document.querySelectorAll('.stat-number');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -18,13 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburger.classList.remove('active');
             hamburger.setAttribute('aria-expanded', 'false');
         });
-    });
-
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        alert('Thank you for your message! We will contact you soon.');
-        contactForm.reset();
     });
 
     const animateNumbers = () => {
