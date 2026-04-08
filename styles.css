@@ -84,11 +84,17 @@ textarea:focus-visible {
     gap: 2rem;
 }
 
+.nav-menu li {
+    position: relative;
+}
+
 .nav-menu a {
+    display: block;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: var(--transition);
+    padding: 0.5rem 0;
 }
 
 .nav-menu a:hover {
@@ -905,8 +911,25 @@ section {
         background: white;
         flex-direction: column;
         padding: 1rem;
-        gap: 1rem;
+        gap: 0;
         box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .nav-menu a:hover {
+        background: #f3f4f6;
     }
 
     .nav-menu.active {
