@@ -675,8 +675,8 @@ section {
 }
 
 .contact-action#phoneLink .contact-action-icon {
-    color: #fbbf24;
-    text-shadow: 0 0 4px rgba(251, 191, 36, 0.6);
+    object-fit: contain;
+    display: inline-block;
 }
 
 .contact-action strong {
